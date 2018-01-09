@@ -34,16 +34,47 @@ contract LotteryDao{
     function buyToken()public payable {
     }
 	
-    function withDrawEth()public returns (bool success) {
+    function withdraw()public returns (bool success) {
     }
 	
-	//control module
-	
 	//banker  module
+	function beBanker(uint128 lotteryType){
+		//check msg.sender.balance
+		
+		//record
+		
+		//put finance to rewardPool
+		
+	}
 	
 	//betting module
+	function betting(uint128 lotteryType,uint256 amount,uint8[] data){
+		//check state
+		
+		//check data & amount
+		
+		//record bet message
+		
+	}
 	
 	//input data
+	function setRewardData(uint128 lotteryType,uint8[] data){
+		//platform setRewardData
+		
+		//Witness setRewardData
+		
+		//check address
+		
+		//check witness balance
+		
+		//drawing
+	}
 	
-	
+	function drawing(uint128 lotteryType){
+		//check data
+		
+		//record
+		
+		//settle finance
+	}
 }
